@@ -44,6 +44,6 @@ jobs:
             docker push $DOCKER_HUB_USER_ID/testci20_db:2.0
             docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
             docker tag myweb:1.0 $DOCKER_HUB_USER_ID/testci20_db:$CIRCLE_SHA1
-            docker tag myweb:1.0 $DOCKER_HUB_USER_ID/testci20_db:3.0
-            docker push $DOCKER_HUB_USER_ID/testci20_db:3.0
+            docker tag myweb:1.0 $DOCKER_HUB_USER_ID/testci30_db:3.0
+            docker push $DOCKER_HUB_USER_ID/testci30_db:3.0
 
